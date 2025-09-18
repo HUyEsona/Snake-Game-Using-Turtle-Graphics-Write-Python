@@ -35,18 +35,18 @@ class Snake:
         self.add_segment(self.segments[-1].position())
 
     def up(self):
-        if self.head.heading() != DOWN:
+        if self.head.heading() != DOWN:   
             self.head.setheading(UP)
-        self.head.setheading(UP)
+
     def down(self):
         if self.head.heading() != UP:
             self.head.setheading(DOWN)
-        self.head.setheading(DOWN)
-    def right(self):
-        if self.head.heading() != LEFT:
-            self.head.setheading(RIGHT)
-        self.head.setheading(RIGHT)
+
     def left(self):
         if self.head.heading() != RIGHT:
             self.head.setheading(LEFT)
-        
+
+    def right(self):
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)
+            
