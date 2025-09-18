@@ -17,6 +17,9 @@ class Score_broad(Turtle):
     def update_scorebroad(self):
         self.write(f"score : {self.score}", align="center", font=(FONT,FONT_SIZE,FONT_TYPE))
 
+    def game_over(self):
+        self.goto(0,0)
+        self.write(f"GAME OVER!", align=ALIGMENT, font=FONT)
 
     def increase_score(self):
         self.score += 1

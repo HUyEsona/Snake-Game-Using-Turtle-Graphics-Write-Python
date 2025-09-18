@@ -13,7 +13,7 @@ screen.tracer(0)
 
 snake = Snake()
 food = Food()
-score = Score_broad()
+score= Score_broad()
 screen.listen()
 screen.onkey(fun=snake.up,key="w")
 screen.onkey(fun=snake.down,key="s")
@@ -31,7 +31,9 @@ while game_on:
     if snake.head.distance(food) < 35:
         food.refresh()
         score.increase_score()
-
-
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_on = False
+        score.game_over()
+        
 
 screen.exitonclick()
