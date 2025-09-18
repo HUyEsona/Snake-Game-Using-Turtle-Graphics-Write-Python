@@ -4,6 +4,7 @@ ALIGMENT = 'center'
 FONT = 'arial'
 FONT_SIZE = 10
 FONT_TYPE = 'normal'
+
 class Score_broad(Turtle):
     def __init__(self):
         super().__init__()
@@ -15,7 +16,7 @@ class Score_broad(Turtle):
         self.update_scorebroad()
     
     def update_scorebroad(self):
-        self.write(f"score : {self.score}", align="center", font=(FONT,FONT_SIZE,FONT_TYPE))
+        self.write(f"score : {self.score}", align=ALIGMENT, font=(FONT,FONT_SIZE,FONT_TYPE))
 
     def game_over(self):
         self.goto(0,0)

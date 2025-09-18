@@ -1,13 +1,14 @@
 from turtle import Turtle
 import random
-
+FOOD_SHAPE = 'circle'
+FOOD_COLOR = 'blue'
 
 class Food(Turtle):
     def __init__(self):
         super().__init__()
-        self.shape('square')
+        self.shape(FOOD_SHAPE)
         self.penup()
-        self.color('blue')
+        self.color(FOOD_COLOR)
         self.speed('fastest')
         self.refresh()
 

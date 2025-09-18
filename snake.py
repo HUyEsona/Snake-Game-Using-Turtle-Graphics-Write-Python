@@ -5,6 +5,9 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+SNAKE_COLOR = 'green'
+SNAKE_SHAPE = 'square'
+
 class Snake:
     def __init__(self):
         self.segments = []
@@ -22,8 +25,8 @@ class Snake:
         self.head.forward(MOVE_DIS)
 
     def add_segment(self, position):
-        snake = Turtle('square')
-        snake.color('green')
+        snake = Turtle(SNAKE_SHAPE)
+        snake.color(SNAKE_COLOR)
         snake.penup()
         snake.goto(position)
         self.segments.append(snake)
