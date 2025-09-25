@@ -4,7 +4,7 @@ from score_broad_game import Score_broad
 from food_snake import Food
 import time
 
-KEY_BLIND = ('w','s','a','d')
+KEY_BLIND = ('w','s','a','d') 
 
 screen = Screen()
 screen.setup(width=600, height= 600)
